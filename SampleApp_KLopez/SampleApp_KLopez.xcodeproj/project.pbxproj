@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		992EB0591DE111F0000A0385 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992EB0581DE111F0000A0385 /* MovieViewController.swift */; };
 		9976831F1DE0F49500E4096B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9976831E1DE0F49500E4096B /* AppDelegate.swift */; };
 		997683231DE0F49500E4096B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997683221DE0F49500E4096B /* SecondViewController.swift */; };
 		997683261DE0F49500E4096B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997683241DE0F49500E4096B /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		992EB0581DE111F0000A0385 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		9976831B1DE0F49500E4096B /* SampleApp_KLopez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp_KLopez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9976831E1DE0F49500E4096B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		997683221DE0F49500E4096B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				9976831E1DE0F49500E4096B /* AppDelegate.swift */,
 				997683221DE0F49500E4096B /* SecondViewController.swift */,
 				997683241DE0F49500E4096B /* Main.storyboard */,
+				992EB0581DE111F0000A0385 /* MovieViewController.swift */,
 				997683341DE109F900E4096B /* MovieTableViewController.swift */,
 				997683271DE0F49500E4096B /* Assets.xcassets */,
 				997683291DE0F49500E4096B /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				997683351DE109F900E4096B /* MovieTableViewController.swift in Sources */,
+				992EB0591DE111F0000A0385 /* MovieViewController.swift in Sources */,
 				997683231DE0F49500E4096B /* SecondViewController.swift in Sources */,
 				9976831F1DE0F49500E4096B /* AppDelegate.swift in Sources */,
 				997683331DE0F7A600E4096B /* RNGViewController.swift in Sources */,
