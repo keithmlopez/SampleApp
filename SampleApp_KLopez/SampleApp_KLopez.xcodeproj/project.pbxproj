@@ -13,6 +13,7 @@
 		997683281DE0F49500E4096B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 997683271DE0F49500E4096B /* Assets.xcassets */; };
 		9976832B1DE0F49500E4096B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997683291DE0F49500E4096B /* LaunchScreen.storyboard */; };
 		997683331DE0F7A600E4096B /* RNGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997683321DE0F7A600E4096B /* RNGViewController.swift */; };
+		997683351DE109F900E4096B /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997683341DE109F900E4096B /* MovieTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9976832A1DE0F49500E4096B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9976832C1DE0F49500E4096B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		997683321DE0F7A600E4096B /* RNGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RNGViewController.swift; path = ../RNGViewController.swift; sourceTree = "<group>"; };
+		997683341DE109F900E4096B /* MovieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				9976831E1DE0F49500E4096B /* AppDelegate.swift */,
 				997683221DE0F49500E4096B /* SecondViewController.swift */,
 				997683241DE0F49500E4096B /* Main.storyboard */,
+				997683341DE109F900E4096B /* MovieTableViewController.swift */,
 				997683271DE0F49500E4096B /* Assets.xcassets */,
 				997683291DE0F49500E4096B /* LaunchScreen.storyboard */,
 				9976832C1DE0F49500E4096B /* Info.plist */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				997683351DE109F900E4096B /* MovieTableViewController.swift in Sources */,
 				997683231DE0F49500E4096B /* SecondViewController.swift in Sources */,
 				9976831F1DE0F49500E4096B /* AppDelegate.swift in Sources */,
 				997683331DE0F7A600E4096B /* RNGViewController.swift in Sources */,
@@ -301,6 +305,7 @@
 				997683311DE0F49500E4096B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
