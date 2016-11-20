@@ -12,10 +12,30 @@ class SecondViewController: UIViewController {
 
     /* Mark: Outlets */
     
-    
+    @IBOutlet weak var stepperValueLabel: UILabel!
     
     /* Mark Actions */
  
+    @IBAction func showModalWindow(_ sender: UIButton) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+        
+    }
+    
+    
+    
+    @IBAction func changeStepper(_ sender: UIStepper) {
+        var dbStepperValue : Double
+        var intStepperValue: Int
+        dbStepperValue = sender.value
+        intStepperValue = Int(dbStepperValue)
+        stepperValueLabel.text = "Step: \(intStepperValue)"
+    }
+    
+    
     @IBAction func toggleDarkMode(_ sender: UISwitch) {
         if sender.isOn {
             view.backgroundColor = UIColor.darkGray

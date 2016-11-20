@@ -16,6 +16,7 @@
 		997683331DE0F7A600E4096B /* RNGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997683321DE0F7A600E4096B /* RNGViewController.swift */; };
 		997683351DE109F900E4096B /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997683341DE109F900E4096B /* MovieTableViewController.swift */; };
 		99BA20FB1DE11DDE00F5E37D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BA20FA1DE11DDE00F5E37D /* Movie.swift */; };
+		99BA20FD1DE13E4200F5E37D /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BA20FC1DE13E4200F5E37D /* PopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		997683321DE0F7A600E4096B /* RNGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RNGViewController.swift; path = ../RNGViewController.swift; sourceTree = "<group>"; };
 		997683341DE109F900E4096B /* MovieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 		99BA20FA1DE11DDE00F5E37D /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		99BA20FC1DE13E4200F5E37D /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				9976831E1DE0F49500E4096B /* AppDelegate.swift */,
 				997683221DE0F49500E4096B /* SecondViewController.swift */,
 				997683241DE0F49500E4096B /* Main.storyboard */,
+				99BA20FC1DE13E4200F5E37D /* PopUpViewController.swift */,
 				992EB0581DE111F0000A0385 /* MovieViewController.swift */,
 				997683341DE109F900E4096B /* MovieTableViewController.swift */,
 				997683271DE0F49500E4096B /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 			files = (
 				997683351DE109F900E4096B /* MovieTableViewController.swift in Sources */,
 				992EB0591DE111F0000A0385 /* MovieViewController.swift in Sources */,
+				99BA20FD1DE13E4200F5E37D /* PopUpViewController.swift in Sources */,
 				99BA20FB1DE11DDE00F5E37D /* Movie.swift in Sources */,
 				997683231DE0F49500E4096B /* SecondViewController.swift in Sources */,
 				9976831F1DE0F49500E4096B /* AppDelegate.swift in Sources */,
