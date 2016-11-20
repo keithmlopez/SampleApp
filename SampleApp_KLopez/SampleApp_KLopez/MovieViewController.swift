@@ -10,7 +10,7 @@ import UIKit
 
 class MovieViewController: UIViewController {
 
-    var movieTitle: String?
+    var movie: Movie?
     
     @IBOutlet weak var movieTitleLabel: UILabel!
     
@@ -19,8 +19,11 @@ class MovieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        movieTitleLabel.text? = movieTitle!
+        if let m = movie {
+            movieTitleLabel.text? = m.movieTitle!
+            movieYearLabel.text? = m.movieYear!
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {

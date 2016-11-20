@@ -9,11 +9,30 @@
 import UIKit
 
 class MovieTableViewController: UITableViewController {
-
-    var movieTitles = ["Halloween", "Halloween 1", "Halloween 3", "Halloween 4", "Halloween 5"]
+    
+    var movies: [Movie]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let movie1 = Movie()
+        let movie2 = Movie()
+        let movie3 = Movie()
+        let movie4 = Movie()
+        let movie5 = Movie()
+        
+        movie1.movieTitle = "Halloween"
+        movie1.movieYear = "1978"
+        movie2.movieTitle = "Halloween 1"
+        movie2.movieYear = "2007"
+        movie3.movieTitle = "Halloween 2"
+        movie3.movieYear = "1981"
+        movie4.movieTitle = "Halloween 3"
+        movie4.movieYear = "1998"
+        movie5.movieTitle = "Halloween 4"
+        movie5.movieYear = "2009"
+        
+        movies = [movie1, movie2, movie3, movie4, movie5]
     }
     
     override func didReceiveMemoryWarning() {
@@ -23,14 +42,20 @@ class MovieTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return movieTitles.count
+        if let m = movies {
+            return m.count
+        }
+        return 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath)
         
-        // Configure the cell...
-        cell.textLabel?.text = movieTitles[indexPath.row]
+        let movie = movies?[indexPath.row]
+        
+        if let m = movie {
+            cell.textLabel?.text = m.movieTitle! + " - " + m.movieYear!
+        }
         return cell
     }
     
@@ -39,18 +64,11 @@ class MovieTableViewController: UITableViewController {
             let movieVC = segue.destination as? MovieViewController
             //movieVC?.movieTitle = "Halloween"
             
-            // get the cell that was tapped
-            // get the index path for that cell
-            // use the index path to get the movieTitle from the array
-            // send the movie title to the Product view controller
-            let cell = sender as? UITableViewCell
-            if let c = cell {
-                let indexPath = tableView.indexPath(for: c)
-                if let ip = indexPath {
-                    let productName = movieTitles[ip.row]
-                    movieVC?.movieTitle = productName
-                }
+            guard let cell = sender as? UITableViewCell,
+                let indexPath = tableView.indexPath(for: cell) else {
+                    return
             }
+            movieVC?.movie = movies?[indexPath.row]
         }
     }
 
